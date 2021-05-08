@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Automatic Generated List</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+        // Make a container element for the list
+        listContainer = document.createElement('div'),
+        // Make the list
+        listElement = document.createElement('ul'),
+        // Add it to the page
+        document.getElementsByTagName('body')[0].appendChild(listContainer);
+        listContainer.appendChild(listElement);
+
+        for (var i = 0; i < 10; i++)
+        {
+          // create an item for each one
+          listItem = document.createElement("li");
+          // Add the item text
+          listItem.innerHTML = i;
+          // Add listItem to the listElement
+          listElement.appendChild(listItem);
+        }
+    </script>
+  </body>
+</html>
